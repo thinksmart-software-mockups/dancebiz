@@ -1,2 +1,2 @@
 # dancebiz
-DanceBiz website mock-up as of Monday, 09 July 2019
+DanceBiz website mock-up as of 31 July 2019
