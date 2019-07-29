@@ -374,7 +374,10 @@ input::placeholder {
 .profile-card {
     width: 100%;
     @include media-breakpoint-up(sm) {
-        width: 205px;
+        width: 195px;
+    }
+    @include media-breakpoint-up(xl) {
+        width: 195px;
     }
 }
 

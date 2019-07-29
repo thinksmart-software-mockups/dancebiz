@@ -9876,7 +9876,12 @@ h3 {
 }
 @media (min-width: 576px) {
   .profile-card {
-    width: 205px;
+    width: 195px;
+  }
+}
+@media (min-width: 1200px) {
+  .profile-card {
+    width: 195px;
   }
 }
 
