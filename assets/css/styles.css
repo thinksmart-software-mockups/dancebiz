@@ -8,13 +8,265 @@
 /* SportsBiz */
 /* SwimBiz */
 /* TennisBiz */
+/* ThinkSmart Software */
 h1, h2, h3, h4, h5, h6 {
   color: #bd1a8d;
 }
 
-/* opaque background for nav background lg and up */
-/* DanceBiz Color Variables */
-/* ClassBiz Color Variables Original */
+.hero-container {
+  position: relative;
+}
+
+.hero-gradient-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.gradient-inset-shadow-deep {
+  box-shadow: inset 0px 0px 200px 25px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .gradient-inset-shadow-deep {
+    box-shadow: inset 0px 0px 150px 45px rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (min-width: 992px) {
+  .gradient-inset-shadow-deep {
+    box-shadow: inset 0px 0px 200px 45px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.gradient-inset-shadow-deep-footer {
+  box-shadow: inset 0px 0px 200px 25px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .gradient-inset-shadow-deep-footer {
+    box-shadow: inset 0px 0px 150px 45px rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (min-width: 992px) {
+  .gradient-inset-shadow-deep-footer {
+    box-shadow: inset 0px 0px 200px 45px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.gradient-inset-shadow-footer:after {
+  content: "123456";
+  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -200;
+}
+
+.cb-gradient {
+  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background-color: #963e99;
+  background: radial-gradient(circle, #963e99 25%, #773079 95%);
+}
+
+.db-gradient {
+  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background-color: #bd1a8d;
+  background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
+}
+
+.gb-gradient {
+  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background-color: #f6921e;
+  background: radial-gradient(circle, #f6921e 40%, #e27108 87%, #dd7703 100%);
+}
+
+.mb-gradient {
+  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background: #cf9c2e;
+  background: radial-gradient(circle, #cf9c2e 40%, #c48c38 75%, #b37923 100%);
+}
+
+.sb-gradient {
+  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background: #ad262a;
+  background: radial-gradient(circle, #ad262a 40%, #9c2024 67%, #920207 100%);
+}
+
+.swb-gradient {
+  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background: #0874cc;
+  background: radial-gradient(circle, #0874cc 40%, #0570c7 67%, #1260c7 100%);
+}
+
+.tb-gradient {
+  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background: #16a864;
+  background: radial-gradient(circle, #16a864 40%, #089252 75%, #037c44 100%);
+}
+
+.tss-gradient {
+  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -100;
+  background-color: #bd1a8d;
+  background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
+}
+
+/* code test to check if all is working */
+.shape-test {
+  position: relative;
+  height: 250px;
+  width: 400px;
+  margin-top: 100px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: olive;
+}
+
+.shape-test:after {
+  content: "Code Test";
+  text-align: center;
+  padding-top: 12.5%;
+  color: olive;
+  background-color: khaki;
+  top: 25%;
+  left: 12.5%;
+  width: 75%;
+  height: 50%;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.shape-backgrounds-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: skew(-20deg);
+}
+
+.shape-graphic-container-left {
+  opacity: 0.8;
+  position: absolute;
+  height: 100%;
+  left: -15%;
+  width: 33.33%;
+}
+@media screen and (min-width: 576px) {
+  .shape-graphic-container-left {
+    left: -7.5%;
+    width: 33.33%;
+  }
+}
+
+.shape-graphic-left-side-a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+  left: 0;
+}
+
+.shape-graphic-left-side-a1 {
+  position: absolute;
+  height: 100%;
+  width: 38.5%;
+  background-color: rgba(0, 0, 0, 0.02);
+  left: 0;
+}
+
+.shape-graphic-left-side-a:before {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: 66.66%;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+@media screen and (min-width: 1200px) {
+  .shape-graphic-left-side-a:before {
+    width: 80%;
+  }
+}
+
+.shape-graphic-left-side-a:after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  width: 33.33%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+@media screen and (min-width: 1200px) {
+  .shape-graphic-left-side-a:after {
+    width: 80%;
+  }
+}
+
+.shape-graphic-left-side-a-extra-color-bar {
+  position: absolute;
+  height: 100%;
+  width: 53.33%;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+@media screen and (min-width: 1200px) {
+  .shape-graphic-left-side-a-extra-color-bar {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .shape-graphic-left-side-a-last {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    width: 38.5%;
+  }
+}
+
+.shape-right {
+  opacity: 0.8;
+  transform: rotate(180deg);
+  position: absolute;
+  height: 100%;
+  right: -25%;
+  width: 33.33%;
+}
+@media screen and (min-width: 576px) {
+  .shape-right {
+    right: -12.5%;
+    width: 33.33%;
+  }
+}
+
 /* Styling for all Biz Products */
 /* Updating the Font Family Base to Roboto */
 /* smooth scroll start */
@@ -49,6 +301,22 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 992px) {
   .shadow-lg {
     box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* ThinkSmart Software Specific Styles */
+.icon-logo-style-tss {
+  height: 50px;
+  width: auto;
+}
+@media (min-width: 768px) {
+  .icon-logo-style-tss {
+    height: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon-logo-style-tss {
+    height: 70px;
   }
 }
 
@@ -110,16 +378,8 @@ input::placeholder {
 }
 
 /* DanceBiz text utilities */
-/* All gradients readjusted */
-.hero-gradient-background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: black;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.3) 100%);
-}
-
 .gradient-main-1 {
+  background-color: #bd1a8d;
   background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
   box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -128,6 +388,10 @@ input::placeholder {
 
 .overflow-visible, .overflow-show {
   overflow: visible;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 /*!
@@ -9786,22 +10050,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
-.nav-gradient:after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 120%;
-  left: -10%;
-  background: black;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.3) 75%);
-  z-index: -1;
-}
-@media (min-width: 768px) {
-  .nav-gradient:after {
-    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.25) 65%, rgba(0, 0, 0, 0.6) 100%);
-  }
-}
-
 .nav-gradient-push {
   position: relative;
   z-index: 2;
@@ -10344,184 +10592,6 @@ h3 {
   background-color: #adb5bd;
 }
 
-.shape-backgrounds-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  transform: skew(-20deg);
-}
-
-.shape-graphic-container-left {
-  opacity: 0.8;
-  position: absolute;
-  height: 100%;
-  left: -15%;
-  width: 33.33%;
-}
-@media (min-width: 576px) {
-  .shape-graphic-container-left {
-    left: -7.5%;
-    width: 33.33%;
-  }
-}
-
-.shape-graphic-left-side-a {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.03);
-  left: 0;
-}
-
-.shape-graphic-left-side-a1 {
-  position: absolute;
-  height: 100%;
-  width: 38.5%;
-  background-color: rgba(0, 0, 0, 0.02);
-  left: 0;
-}
-
-.shape-graphic-left-side-a:before {
-  content: "";
-  position: absolute;
-  height: inherit;
-  width: 66.66%;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-@media (min-width: 1200px) {
-  .shape-graphic-left-side-a:before {
-    width: 80%;
-  }
-}
-
-.shape-graphic-left-side-a:after {
-  content: "";
-  position: absolute;
-  height: inherit;
-  width: 33.33%;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-@media (min-width: 1200px) {
-  .shape-graphic-left-side-a:after {
-    width: 80%;
-  }
-}
-
-.shape-graphic-left-side-a-extra-color-bar {
-  position: absolute;
-  height: 100%;
-  width: 53.33%;
-  background-color: rgba(0, 0, 0, 0.06);
-}
-@media (min-width: 1200px) {
-  .shape-graphic-left-side-a-extra-color-bar {
-    width: 60%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .shape-graphic-left-side-a-last {
-    position: absolute;
-    height: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    width: 38.5%;
-  }
-}
-
-.shape-right {
-  opacity: 0.8;
-  transform: rotate(180deg);
-  position: absolute;
-  height: 100%;
-  right: -25%;
-  width: 33.33%;
-}
-@media (min-width: 576px) {
-  .shape-right {
-    right: -12.5%;
-    width: 33.33%;
-  }
-}
-
-.shape-graphic-container-right-alt {
-  position: absolute;
-  opacity: 0.8;
-  height: 100%;
-  right: -5%;
-  width: 33.33%;
-}
-@media (min-width: 576px) {
-  .shape-graphic-container-right-alt {
-    right: -7.5%;
-    width: 33.33%;
-  }
-}
-
-.shape-graphic-right-side-b {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.03);
-  right: 0;
-}
-
-.shape-graphic-right-side-b:before {
-  content: "";
-  right: 0;
-  position: absolute;
-  height: inherit;
-  width: 66.66%;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-@media (min-width: 1200px) {
-  .shape-graphic-right-side-b:before {
-    width: 80%;
-  }
-}
-
-.shape-graphic-right-side-b:after {
-  content: "";
-  position: absolute;
-  height: inherit;
-  width: 33.33%;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-@media (min-width: 1200px) {
-  .shape-graphic-right-side-b:after {
-    width: 80%;
-  }
-}
-
-.shape-graphic-right-side-b-extra-color-bar {
-  position: absolute;
-  height: 100%;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.06);
-}
-@media (min-width: 1200px) {
-  .shape-graphic-right-side-b-extra-color-bar {
-    width: 60%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .shape-graphic-right-side-b-last {
-    position: absolute;
-    height: 100%;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.03);
-    width: 38.5%;
-  }
-}
-
-.small-angle-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
 @media (min-width: 1200px) {
   .testimonials-card {
     box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.25);
@@ -10815,17 +10885,34 @@ h3 {
   filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.5));
 }
 
-.gradient-inset-shadow-deep {
-  box-shadow: inset 0px 0px 200px 25px rgba(0, 0, 0, 0.2);
+#footer-country-selector .navbar-nav .nav-item:hover {
+  background-color: transparent;
 }
-@media (min-width: 768px) {
-  .gradient-inset-shadow-deep {
-    box-shadow: inset 0px 0px 150px 45px rgba(0, 0, 0, 0.3);
-  }
+#footer-country-selector .navbar-nav .nav-item:hover a {
+  text-decoration: none;
 }
-@media (min-width: 992px) {
-  .gradient-inset-shadow-deep {
-    box-shadow: inset 0px 0px 150px 45px rgba(0, 0, 0, 0.3);
+
+.mobile-footer {
+  z-index: -1;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 10;
+}
+
+.footer-cotainer-small {
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+  .dancebiz-dark-strip-1:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: #5b0441;
   }
 }
 
