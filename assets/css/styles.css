@@ -1,170 +1,25 @@
 @charset "UTF-8";
-/* ClassBiz Colors */
-/* ClassBiz Retheming */
-/* DanceBiz Colors */
-/* DanceBiz Retheming */
-/* GymnasticsBiz Colors */
-/* MusicBiz */
-/* SportsBiz */
-/* SwimBiz */
-/* TennisBiz */
-/* ThinkSmart Software */
+/* Bootstrap Overrides */
+/* Updating the Font Family Base to Roboto */
+/* Updating All the Headings to Open Sans */
 h1, h2, h3, h4, h5, h6 {
-  color: #bd1a8d;
+  font-family: "Open Sans", sans-serif;
 }
 
-.hero-container {
-  position: relative;
+/* Updating the colors for all biz products */
+/* All - Btn-success border bottom for all biz products */
+.btn-success {
+  box-shadow: 0 3px 0 #2e9a4e;
 }
 
-.hero-gradient-background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.3) 100%);
+/* Overriding box shadow values for all */
+.shadow-lg {
+  box-shadow: none;
 }
-
-.gradient-inset-shadow-deep {
-  box-shadow: inset 0px 0px 200px 25px rgba(0, 0, 0, 0.2);
-}
-@media screen and (min-width: 768px) {
-  .gradient-inset-shadow-deep {
-    box-shadow: inset 0px 0px 150px 45px rgba(0, 0, 0, 0.3);
+@media (min-width: 992px) {
+  .shadow-lg {
+    box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.25);
   }
-}
-@media screen and (min-width: 992px) {
-  .gradient-inset-shadow-deep {
-    box-shadow: inset 0px 0px 200px 45px rgba(0, 0, 0, 0.3);
-  }
-}
-
-.gradient-inset-shadow-deep-footer {
-  box-shadow: inset 0px 0px 200px 25px rgba(0, 0, 0, 0.2);
-}
-@media screen and (min-width: 768px) {
-  .gradient-inset-shadow-deep-footer {
-    box-shadow: inset 0px 0px 150px 45px rgba(0, 0, 0, 0.3);
-  }
-}
-@media screen and (min-width: 992px) {
-  .gradient-inset-shadow-deep-footer {
-    box-shadow: inset 0px 0px 200px 45px rgba(0, 0, 0, 0.3);
-  }
-}
-
-.gradient-inset-shadow-footer:after {
-  content: "123456";
-  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 25%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.3) 100%);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -200;
-}
-
-.cb-gradient {
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -100;
-  background-color: #963e99;
-  background: radial-gradient(circle, #963e99 25%, #773079 95%);
-}
-
-.db-gradient {
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -100;
-  background-color: #bd1a8d;
-  background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
-}
-
-.gb-gradient {
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -100;
-  background-color: #f6921e;
-  background: radial-gradient(circle, #f6921e 40%, #e27108 87%, #dd7703 100%);
-}
-
-.mb-gradient {
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -100;
-  background: #cf9c2e;
-  background: radial-gradient(circle, #cf9c2e 40%, #c48c38 75%, #b37923 100%);
-}
-
-.sb-gradient {
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -100;
-  background: #ad262a;
-  background: radial-gradient(circle, #ad262a 40%, #9c2024 67%, #920207 100%);
-}
-
-.swb-gradient {
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -100;
-  background: #0874cc;
-  background: radial-gradient(circle, #0874cc 40%, #0570c7 67%, #1260c7 100%);
-}
-
-.tb-gradient {
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -100;
-  background: #16a864;
-  background: radial-gradient(circle, #16a864 40%, #089252 75%, #037c44 100%);
-}
-
-.tss-gradient {
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -100;
-  background-color: #bd1a8d;
-  background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
-}
-
-/* code test to check if all is working */
-.shape-test {
-  position: relative;
-  height: 250px;
-  width: 400px;
-  margin-top: 100px;
-  border-radius: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: olive;
-}
-
-.shape-test:after {
-  content: "Code Test";
-  text-align: center;
-  padding-top: 12.5%;
-  color: olive;
-  background-color: khaki;
-  top: 25%;
-  left: 12.5%;
-  width: 75%;
-  height: 50%;
-  position: absolute;
-  border-radius: 10px;
 }
 
 .shape-backgrounds-container {
@@ -267,133 +122,318 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Styling for all Biz Products */
-/* Updating the Font Family Base to Roboto */
-/* smooth scroll start */
-html {
-  scroll-behavior: smooth;
+/* ClassBiz Colors */
+/* Retheming Test */
+.cb-primary-bg {
+  background-color: #773079;
 }
 
-/* smooth scroll end */
-/* Updating All the Headings to Open Sans */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+.cb-secondary-bg {
+  background-color: #c78ec7;
 }
 
-/* right arrow appearing in the overviews page for the call to action card item */
-.right-arrow-icon-circle {
-  position: absolute;
-  left: -19px;
-  top: 35%;
-  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+.cb-text-primary {
+  color: #773079;
 }
 
-/* Updating the colors for all biz products */
-/* All - Btn-success border bottom for all biz products */
-.btn-success {
-  box-shadow: 0 3px 0 #2e9a4e;
+.cb-text-secondary {
+  color: #c78ec7;
 }
 
-/* Overriding box shadow values for all */
-.shadow-lg {
-  box-shadow: none;
-}
-@media (min-width: 992px) {
-  .shadow-lg {
-    box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, 0.25);
-  }
+.cb-dark-bg {
+  background-color: #421a42;
 }
 
-/* ThinkSmart Software Specific Styles */
-.icon-logo-style-tss {
-  height: 50px;
-  width: auto;
-}
-@media (min-width: 768px) {
-  .icon-logo-style-tss {
-    height: 60px;
-  }
-}
-@media (min-width: 1200px) {
-  .icon-logo-style-tss {
-    height: 70px;
-  }
-}
-
-/* Navigation - Border bottom for mobile and tablet only */
-@media (max-width: 991px) {
-  .border-bottom-sm-md {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-}
-
-@media (min-width: 992px) {
-  .nav-item:hover {
-    background-color: #90146c;
-    transition: 1s;
-  }
-}
-
-/* Navigation - Selected page in large view and up */
-@media (min-width: 992px) {
-  .selected {
-    background-color: #650548;
-  }
-}
-
-/* Changing the opacity / color of the placeholder */
-input::placeholder {
-  opacity: 0.7 !important;
-}
-
-/* Opacity utilities*/
-.opacity-0 {
-  opacity: 0;
-}
-
-.opacity-1 {
-  opacity: 0.2;
-}
-
-.opacity-2 {
-  opacity: 0.4;
-}
-
-.opacity-3 {
-  opacity: 0.6;
-}
-
-.opacity-4 {
-  opacity: 0.8;
-}
-
-.opacity-5 {
-  opacity: 1;
-}
-
-/* link unstyled */
-/* DanceBiz background color utilities */
-.db-primary-color-bg {
+/* DanceBiz Colors */
+/* Retheming Test */
+.db-primary-bg {
   background-color: #bd1a8d;
 }
 
-/* DanceBiz text utilities */
-.gradient-main-1 {
+.db-secondary-bg {
+  background-color: #ffa8e4;
+}
+
+.db-text-primary {
+  color: #bd1a8d;
+}
+
+.db-text-secondary {
+  color: #ffa8e4;
+}
+
+.db-dark-bg {
+  background-color: #5b0441;
+}
+
+/* GymnasticsBiz Colors */
+/* Retheming Test */
+.gb-primary-bg {
+  background-color: #e9830f;
+}
+
+.gb-secondary-bg {
+  background-color: #f8c284;
+}
+
+.gb-text-primary {
+  color: #e9830f;
+}
+
+.gb-text-secondary {
+  color: #f8c284;
+}
+
+.gb-dark-bg {
+  background-color: #cf6502;
+}
+
+/* MusicBiz */
+/* Retheming Test */
+.mb-primary-bg {
+  background-color: #b27d2b;
+}
+
+.mb-secondary-bg {
+  background-color: rgba(243, 203, 142, 0.8);
+}
+
+.mb-text-primary {
+  color: #b27d2b;
+}
+
+.mb-text-secondary {
+  color: rgba(243, 203, 142, 0.8);
+}
+
+.mb-dark-bg {
+  background-color: #b37923;
+}
+
+/* SportsBiz */
+/* Retheming Test */
+.sb-primary-bg {
+  background-color: #cc242a;
+}
+
+.sb-secondary-bg {
+  background-color: #fa8585;
+}
+
+.sb-text-primary {
+  color: #cc242a;
+}
+
+.sb-text-secondary {
+  color: #fa8585;
+}
+
+.sb-dark-bg {
+  background-color: #ad191e;
+}
+
+/* SwimBiz */
+.swb-primary-bg {
+  background-color: #0370c9;
+}
+
+.swb-secondary-bg {
+  background-color: #8ec9fa;
+}
+
+.swb-text-primary {
+  color: #0370c9;
+}
+
+.swb-text-secondary {
+  color: #8ec9fa;
+}
+
+.swb-dark-bg {
+  background-color: #0a55aa;
+}
+
+/* Retheming Test */
+/* TennisBiz */
+/* Retheming Test */
+.tb-primary-bg {
+  background-color: #018045;
+}
+
+.tb-secondary-bg {
+  background-color: #8aeca8;
+}
+
+.tb-text-primary {
+  color: #018045;
+}
+
+.tb-text-secondary {
+  color: #8aeca8;
+}
+
+.tb-dark-bg {
+  background-color: #03532e;
+}
+
+/* ThinkSmart Software */
+/* Retheming Test */
+.tss-primary-bg {
+  background-color: #018045;
+}
+
+.tss-secondary-bg {
+  background-color: #00adee;
+}
+
+.tss-text-primary {
+  color: #024fa1;
+}
+
+.tss-text-secondary {
+  color: #00adee;
+}
+
+.tss-dark-bg {
+  background-color: #073985;
+}
+
+/* Default body text color */
+.cb-gradient {
+  box-shadow: inset 0px -43px 75px -20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background-color: #963e99;
+  background: radial-gradient(circle, #963e99 25%, #773079 95%);
+}
+
+.db-gradient:after {
+  content: "";
+  box-shadow: inset 0px -43px 75px -20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
   background-color: #bd1a8d;
   background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
-  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.1);
+}
+
+.gb-gradient {
+  box-shadow: inset 0px -43px 75px -20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background-color: #f6921e;
+  background: radial-gradient(circle, #f6921e 40%, #e27108 87%, #dd7703 100%);
+}
+
+.mb-gradient {
+  box-shadow: inset 0px -43px 75px -20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background: #cf9c2e;
+  background: radial-gradient(circle, #cf9c2e 40%, #c48c38 75%, #b37923 100%);
+}
+
+.sb-gradient {
+  box-shadow: inset 0px -43px 75px -20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background: #ad262a;
+  background: radial-gradient(circle, #ad262a 40%, #9c2024 67%, #920207 100%);
+}
+
+.swb-gradient {
+  box-shadow: inset 0px -43px 75px -20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background: #0874cc;
+  background: radial-gradient(circle, #0874cc 40%, #0570c7 67%, #1260c7 100%);
+}
+
+.tb-gradient {
+  box-shadow: inset 0px -43px 75px -20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background: #16a864;
+  background: radial-gradient(circle, #16a864 40%, #089252 75%, #037c44 100%);
+}
+
+.tss-gradient {
+  box-shadow: inset 0px -43px 75px -20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  background-color: #bd1a8d;
+  background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
+}
+
+.hero-container {
   position: relative;
-  overflow: hidden;
 }
 
-.overflow-visible, .overflow-show {
-  overflow: visible;
+.hero-gradient-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.3) 100%);
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.gradient-inset-shadow-deep {
+  box-shadow: inset 0px 0px 200px 25px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+  .gradient-inset-shadow-deep {
+    box-shadow: inset 0px 0px 150px 45px rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (min-width: 992px) {
+  .gradient-inset-shadow-deep {
+    box-shadow: inset 0px 0px 200px 45px rgba(0, 0, 0, 0.3);
+  }
 }
 
+.dark-strip-footer {
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.gradient-inset-shadow-deep-footer:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  box-shadow: inset 0px 0px 200px 25px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .gradient-inset-shadow-deep-footer:after {
+    box-shadow: inset 0px 0px 150px 45px rgba(0, 0, 0, 0.1);
+  }
+}
+@media screen and (min-width: 992px) {
+  .gradient-inset-shadow-deep-footer:after {
+    box-shadow: inset 0px 0px 200px 45px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* code test to check if all is working */
 /*!
  * Bootstrap v4.3.0 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -2885,8 +2925,8 @@ fieldset:disabled a.btn {
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #370227;
-  border-color: #2b021f;
+  background-color: #360227;
+  border-color: #2a021e;
 }
 .btn-dark:focus, .btn-dark.focus {
   box-shadow: 0 0 0 0.2rem rgba(116, 42, 94, 0.5);
@@ -2898,8 +2938,8 @@ fieldset:disabled a.btn {
 }
 .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active, .show > .btn-dark.dropdown-toggle {
   color: #fff;
-  background-color: #2b021f;
-  border-color: #1e0116;
+  background-color: #2a021e;
+  border-color: #1e0115;
 }
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(116, 42, 94, 0.5);
@@ -4935,7 +4975,7 @@ a.badge-light:focus, a.badge-light.focus {
 }
 a.badge-dark:hover, a.badge-dark:focus {
   color: #fff;
-  background-color: #2b021f;
+  background-color: #2a021e;
 }
 a.badge-dark:focus, a.badge-dark.focus {
   outline: 0;
@@ -6246,7 +6286,7 @@ button.bg-light:focus {
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #2b021f !important;
+  background-color: #2a021e !important;
 }
 
 .bg-white {
@@ -10050,6 +10090,108 @@ h3 {
     border-color: #dee2e6;
   }
 }
+/* smooth scroll start */
+html {
+  scroll-behavior: smooth;
+}
+
+/* smooth scroll end */
+/* right arrow appearing in the overviews page for the call to action card item */
+.right-arrow-icon-circle {
+  position: absolute;
+  left: -19px;
+  top: 35%;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.2));
+}
+
+/* ThinkSmart Software Specific Styles */
+.icon-logo-style-tss {
+  height: 50px;
+  width: auto;
+}
+@media (min-width: 768px) {
+  .icon-logo-style-tss {
+    height: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .icon-logo-style-tss {
+    height: 70px;
+  }
+}
+
+/* Navigation - Border bottom for mobile and tablet only */
+@media (max-width: 991px) {
+  .border-bottom-sm-md {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: #90146c;
+    transition: 1s;
+  }
+}
+
+/* Navigation - Selected page in large view and up */
+@media (min-width: 992px) {
+  .selected {
+    background-color: #650448;
+  }
+}
+
+/* Changing the opacity / color of the placeholder */
+input::placeholder {
+  opacity: 0.7 !important;
+}
+
+/* Opacity utilities*/
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 0.2;
+}
+
+.opacity-2 {
+  opacity: 0.4;
+}
+
+.opacity-3 {
+  opacity: 0.6;
+}
+
+.opacity-4 {
+  opacity: 0.8;
+}
+
+.opacity-5 {
+  opacity: 1;
+}
+
+/* DanceBiz background color utilities */
+.db-primary-color-bg {
+  background-color: #bd1a8d;
+}
+
+.gradient-main-1 {
+  background-color: #bd1a8d;
+  background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
+  box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.overflow-visible, .overflow-show {
+  overflow: visible;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .nav-gradient-push {
   position: relative;
   z-index: 2;
@@ -10892,28 +11034,182 @@ h3 {
   text-decoration: none;
 }
 
-.mobile-footer {
-  z-index: -1;
+/* ClassBiz Colors */
+/* Retheming Test */
+.cb-primary-bg {
+  background-color: #773079;
 }
 
-.footer-container {
-  position: relative;
-  z-index: 10;
+.cb-secondary-bg {
+  background-color: #c78ec7;
 }
 
-.footer-cotainer-small {
-  position: relative;
-  z-index: 10;
+.cb-text-primary {
+  color: #773079;
 }
 
-@media screen and (min-width: 768px) {
-  .dancebiz-dark-strip-1:after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    background-color: #5b0441;
-  }
+.cb-text-secondary {
+  color: #c78ec7;
 }
+
+.cb-dark-bg {
+  background-color: #421a42;
+}
+
+/* DanceBiz Colors */
+/* Retheming Test */
+.db-primary-bg {
+  background-color: #bd1a8d;
+}
+
+.db-secondary-bg {
+  background-color: #ffa8e4;
+}
+
+.db-text-primary {
+  color: #bd1a8d;
+}
+
+.db-text-secondary {
+  color: #ffa8e4;
+}
+
+.db-dark-bg {
+  background-color: #5b0441;
+}
+
+/* GymnasticsBiz Colors */
+/* Retheming Test */
+.gb-primary-bg {
+  background-color: #e9830f;
+}
+
+.gb-secondary-bg {
+  background-color: #f8c284;
+}
+
+.gb-text-primary {
+  color: #e9830f;
+}
+
+.gb-text-secondary {
+  color: #f8c284;
+}
+
+.gb-dark-bg {
+  background-color: #cf6502;
+}
+
+/* MusicBiz */
+/* Retheming Test */
+.mb-primary-bg {
+  background-color: #b27d2b;
+}
+
+.mb-secondary-bg {
+  background-color: rgba(243, 203, 142, 0.8);
+}
+
+.mb-text-primary {
+  color: #b27d2b;
+}
+
+.mb-text-secondary {
+  color: rgba(243, 203, 142, 0.8);
+}
+
+.mb-dark-bg {
+  background-color: #b37923;
+}
+
+/* SportsBiz */
+/* Retheming Test */
+.sb-primary-bg {
+  background-color: #cc242a;
+}
+
+.sb-secondary-bg {
+  background-color: #fa8585;
+}
+
+.sb-text-primary {
+  color: #cc242a;
+}
+
+.sb-text-secondary {
+  color: #fa8585;
+}
+
+.sb-dark-bg {
+  background-color: #ad191e;
+}
+
+/* SwimBiz */
+.swb-primary-bg {
+  background-color: #0370c9;
+}
+
+.swb-secondary-bg {
+  background-color: #8ec9fa;
+}
+
+.swb-text-primary {
+  color: #0370c9;
+}
+
+.swb-text-secondary {
+  color: #8ec9fa;
+}
+
+.swb-dark-bg {
+  background-color: #0a55aa;
+}
+
+/* Retheming Test */
+/* TennisBiz */
+/* Retheming Test */
+.tb-primary-bg {
+  background-color: #018045;
+}
+
+.tb-secondary-bg {
+  background-color: #8aeca8;
+}
+
+.tb-text-primary {
+  color: #018045;
+}
+
+.tb-text-secondary {
+  color: #8aeca8;
+}
+
+.tb-dark-bg {
+  background-color: #03532e;
+}
+
+/* ThinkSmart Software */
+/* Retheming Test */
+.tss-primary-bg {
+  background-color: #018045;
+}
+
+.tss-secondary-bg {
+  background-color: #00adee;
+}
+
+.tss-text-primary {
+  color: #024fa1;
+}
+
+.tss-text-secondary {
+  color: #00adee;
+}
+
+.tss-dark-bg {
+  background-color: #073985;
+}
+
+/* Default body text color */
 
 /*# sourceMappingURL=styles.css.map */
