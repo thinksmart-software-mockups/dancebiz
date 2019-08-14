@@ -199,6 +199,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Default body text color */
+h1, h2, h3, h4, h5, h6 {
+  color: #bd1a8d;
+}
+
 /*!
  * Bootstrap v4.3.0 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -10882,6 +10886,7 @@ input::placeholder {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: -1;
   background-color: #963e99;
   background: radial-gradient(circle, #963e99 25%, #773079 95%);
 }
@@ -10890,6 +10895,7 @@ input::placeholder {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: -1;
   background-color: #bd1a8d;
   background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
 }
@@ -10898,6 +10904,7 @@ input::placeholder {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: -1;
   background-color: #f6921e;
   background: radial-gradient(circle, #f6921e 40%, #e27108 87%, #dd7703 100%);
 }
@@ -10906,6 +10913,7 @@ input::placeholder {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: -1;
   background: #cf9c2e;
   background: radial-gradient(circle, #cf9c2e 40%, #c48c38 75%, #b37923 100%);
 }
@@ -10914,6 +10922,7 @@ input::placeholder {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: -1;
   background: #ad262a;
   background: radial-gradient(circle, #ad262a 40%, #9c2024 67%, #920207 100%);
 }
@@ -10922,6 +10931,7 @@ input::placeholder {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: -1;
   background: #0874cc;
   background: radial-gradient(circle, #0874cc 40%, #0570c7 67%, #1260c7 100%);
 }
@@ -10930,6 +10940,7 @@ input::placeholder {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: -1;
   background: #16a864;
   background: radial-gradient(circle, #16a864 40%, #089252 75%, #037c44 100%);
 }
@@ -10938,6 +10949,7 @@ input::placeholder {
   height: 100%;
   width: 100%;
   position: absolute;
+  z-index: -1;
   background: #0874cc;
   background: radial-gradient(circle, #0a47a3 40%, #0e4394 67%, #07367c 100%);
 }
@@ -10993,8 +11005,12 @@ input::placeholder {
 }
 @media screen and (min-width: 992px) {
   .nav-gradient:before {
-    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 65%, rgba(0, 0, 0, 0.4) 100%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.25) 65%, rgba(0, 0, 0, 0.3) 90%);
   }
+}
+
+.light-grey-divider {
+  z-index: -1000;
 }
 
 .dark-strip-footer {
@@ -11026,5 +11042,24 @@ input::placeholder {
 }
 
 /* code test to check if all is working */
+.crowd-bg:after {
+  content: "";
+  position: absolute;
+  height: 145px;
+  width: 100%;
+  left: 0;
+  background-image: url("../img/generic-pricing-page-crowd.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: -20px;
+  z-index: -10;
+}
+@media screen and (min-width: 1200px) {
+  .crowd-bg:after {
+    top: -40px;
+    left: 5%;
+    width: 90%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
