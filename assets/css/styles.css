@@ -9898,7 +9898,7 @@ html {
 
 @media (min-width: 992px) {
   .nav-item:hover {
-    background-color: #90146c;
+    background-color: rgba(0, 0, 0, 0.15);
     transition: 1s;
   }
 }
@@ -9906,7 +9906,7 @@ html {
 /* Navigation - Selected page in large view and up */
 @media (min-width: 992px) {
   .selected {
-    background-color: #7f055b;
+    background-color: rgba(0, 0, 0, 0.12);
   }
 }
 
@@ -9938,11 +9938,6 @@ input::placeholder {
 
 .opacity-5 {
   opacity: 1;
-}
-
-/* DanceBiz background color utilities */
-.db-primary-color-bg {
-  background-color: #bd1a8d;
 }
 
 .gradient-main-1 {
@@ -11051,7 +11046,7 @@ input::placeholder {
   background-image: url("../img/generic-pricing-page-crowd.svg");
   background-size: 100%;
   background-repeat: no-repeat;
-  top: -20px;
+  top: -10px;
   z-index: -10;
 }
 @media screen and (min-width: 1200px) {
