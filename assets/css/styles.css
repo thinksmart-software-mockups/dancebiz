@@ -11057,4 +11057,20 @@ input::placeholder {
   }
 }
 
+.final-overlay:before {
+  position: absolute;
+  content: "";
+  left: -200px;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  background-color: #000000;
+}
+
+.last {
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
 /*# sourceMappingURL=styles.css.map */
