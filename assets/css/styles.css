@@ -477,7 +477,6 @@
 
 /* code test to check if all is working */
 .gradient-main-1 {
-  background: radial-gradient(circle, #bd1a8d 25%, #9e1475 85%, #9e1475 100%);
   background: #16a864;
   background: radial-gradient(circle, #16a864 40%, #089252 75%, #037c44 100%);
   box-shadow: inset 0px -43px 75px -50px rgba(0, 0, 0, 0.1);
